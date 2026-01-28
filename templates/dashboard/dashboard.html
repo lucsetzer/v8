@@ -1,0 +1,10 @@
+<!-- templates/dashboard/dashboard.html -->
+<div class="grid">
+  {% for app in apps %}
+  <div class="card">
+    <h3>{{ app.icon }} {{ app.name }}</h3>
+    <p>{{ app.description }}</p>
+    <a href="{{ app.url }}" role="button">Open {{ app.name }}</a>
+  </div>
+  {% endfor %}
+</div>
